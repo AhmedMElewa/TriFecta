@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/slo"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سياسه الانضمام ل    TriFecta app\n
+أقر بموافقتي علي :\n
+- يجب ان تكون جميع بيانات المتجر صحيحة من حيث العنوان و رقم الهاتف و البريد الالكتروني.\n
+- يجب معامله الزبائن بأسلوب حسن والاقد تتعرض للحظر.\n
+سياسة أضافة المنتجات :\n
+- يجب اضاحه اما اذا كان المنتج متاح الان او غير متاح و اذا كان غير متاح يجب ادخال التوقيت لاتاحتة في حد أقصي أسبوع.\n
+-يجب اضاحه سعر التوصيل.\n
+- يجب ان تكون المنتجات مصورة بطريقه محترفه و ان لا يكون هناك اكثر من منتج في نفس الصورة الا اذا كان هناك
+- عرض يشمل المنتجات الموجودة في الصورة.\n
+- يتم مراجعه المنتج اولا من خلالنا ليوافق المعايير الاساسيه ثم الموافقه عليه ليتمكن المشترون من طلبه.\n
+- يتم مسح المنتج تلقائيا بعد عمليه البيع النجاحه.\n
+نسبة العمولة و التحصيلات  ل TirFecta :\n
+- نسبة العمولة هي 10% من قيمة المنتج و حد ادني 3 جنيهات و هي في مقابل الخدمة.\n
+- تسدد هذه العموله بعدما يصل الدائن ل مائه جنيه او أكثر عن طريق التواصل معنا.\n"
+            android:textSize="16sp"
+            android:textDirection="rtl"
+            android:layoutDirection="rtl"
+            android:textColor="@color/colorText2"
+            android:id="@+id/desc"
+            android:layout_below="@id/slo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Politics to Join TriFecta app\n
+I agree with my consent to:\n
+- All store data must be 100% correct in terms of address, telephone number and e-mail address.\n
+- Customers must be handled well or you will be blocked.\n
+Product Addendum Policy:\n
+- It should be clarified whether the product is now available or not available and if not available, the time must be entered for a maximum of one week.\n
+- The delivery price should be explained.\n
+- The products must be professionally photocopied and there should be no more than one product in the same picture unless there is
+- The package includes products in the picture.\n
+- The product will be available to the buyers after our review if it have the basic rules.\n
+- The product is automatically cleared after the successful sales process.\n
+Commission Rate and Collections for TirFecta:\n
+- Commission rate is 10% of the value of the product or a minimum of 3 pounds that`s for service.\n
+- This commission is paid after the commission reaches LE 100 or more by contacting us.\n"
+            android:textSize="16sp"
+            android:textColor="@color/colorText2"
+            android:id="@+id/ver"
+            android:layout_below="@id/desc"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="CRAFT AND SELL YOUR MAGIC"
+        android:textSize="16sp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_texmenutop"
+        android:id="@+id/slo"
+        android:layout_below="@+id/title"
+
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="TRIFECTA"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+</RelativeLayout>

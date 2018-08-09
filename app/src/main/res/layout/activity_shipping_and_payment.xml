@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <ScrollView
+        android:id="@+id/order_create_scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:weightSum="1">
+
+
+        <!-- Shipping details part -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Details"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/order_Card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="Card Number"
+                    android:inputType="textPersonName"
+                    android:nextFocusForward="@+id/order_create_street"
+                    android:singleLine="true"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiration date"
+                    android:textSize="20sp"
+                    android:textColor="#58595B"
+                    android:layout_column="1"
+                    />
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinStMonty"
+                    android:layout_weight="1"
+                    android:entries="@array/month"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinStYear"
+                    android:layout_weight="1"
+                    android:entries="@array/year"
+                    />
+
+
+                </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/order_Card_Security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="Security Number"
+                    android:inputType="textPersonName"
+                    android:nextFocusForward="@+id/order_create_street"
+                    android:singleLine="true"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <!-- Shipping details part -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping details"
+                    android:textAllCaps="true"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/order_create_name_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/order_create_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+                        android:nextFocusForward="@+id/order_create_street"
+                        android:singleLine="true"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false"
+                    android:weightSum="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/order_create_street_wrapper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        >
+
+                        <EditText
+                            android:id="@+id/order_create_street"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="Street"
+                            android:inputType="textPostalAddress"
+                            android:nextFocusDown="@+id/order_create_houseNumber"
+                            android:nextFocusForward="@+id/order_create_houseNumber"
+                            android:nextFocusRight="@+id/order_create_houseNumber"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/order_create_houseNumber_wrapper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        >
+
+                        <EditText
+                            android:id="@+id/order_create_houseNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="Home Number"
+                            android:inputType="textPostalAddress"
+                            android:nextFocusDown="@+id/order_create_city"
+                            android:nextFocusForward="@+id/order_create_city"
+                            android:nextFocusLeft="@+id/order_create_street"
+                            android:nextFocusRight="@+id/order_create_city"
+                            android:singleLine="true" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/order_create_city_wrapper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        >
+
+                        <EditText
+                            android:id="@+id/order_create_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="City"
+                            android:inputType="textPostalAddress"
+                            android:nextFocusDown="@+id/order_create_zip"
+                            android:nextFocusForward="@+id/order_create_zip"
+                            android:nextFocusLeft="@+id/order_create_houseNumber"
+                            android:nextFocusRight="@+id/order_create_zip"
+                            android:singleLine="true" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/order_create_phone_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:id="@+id/order_create_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:hint="Phone"
+                        android:inputType="phone"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/order_create_note_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:id="@+id/order_create_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:hint="Note"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:maxLength="1024"
+                        android:minHeight="50dp"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/order_create_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finish order"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

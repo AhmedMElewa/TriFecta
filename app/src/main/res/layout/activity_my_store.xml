@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_store"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trifecta.mada.trifecta13.activity.MyStore"
+    android:background="#fff">
+
+    <TextView
+        android:text="You don`t have Store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtHavenotSt"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/btnTC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions for the sellers"
+        android:textColor="#2b73e1"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:lines="2"
+        android:textSize="20sp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtHavenotSt"
+        />
+
+    <Button
+        android:text="Create"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHavenotSt"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnCreateSt"
+        android:background="#44BEC7"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        />
+
+
+</RelativeLayout>

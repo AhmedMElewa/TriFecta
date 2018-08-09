@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Myproducts"
+    android:background="#fff">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:context=".MainActivity"
+        android:id="@+id/qqq">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_products_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No products  for this store"
+            android:padding="16dp"
+            android:textSize="13dp"
+            android:textColor="@color/color_texmenutop"
+            android:layout_marginBottom="50dp"
+            android:background="#ffff"
+            android:visibility="gone"
+            android:id="@+id/productsCheck"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

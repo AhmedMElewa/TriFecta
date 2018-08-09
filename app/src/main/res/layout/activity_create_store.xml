@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp">
+
+        <!--//main-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+
+                >
+
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/secondname1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorText2" />
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:id="@+id/inputStName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:background="#00000000"
+                        android:maxLines="1"
+                        android:maxLength="15"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/phoneno1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorText2" />
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinStCountry"
+                        android:layout_weight="1"
+                        android:entries="@array/country"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="16dp"-->
+
+                <!--&gt;-->
+
+
+
+
+
+                <!--<TextView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/address1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Payment Method"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="@color/colorText2" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_weight="0.6"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--&lt;!&ndash;<CheckBox android:id="@+id/checkboxPaypal"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="Paypal"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="12dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textColor="@color/colorText2"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:focusable="false"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:clickable="false"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:focusableInTouchMode="false"&ndash;&gt;-->
+                        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+
+
+                    <!--<CheckBox android:id="@+id/checkboxCash"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Cash"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:textColor="@color/colorText2"-->
+                        <!--/>-->
+
+                    <!--<CheckBox android:id="@+id/checkboxOther"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Other"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:textColor="@color/colorText2"-->
+                        <!--/>-->
+
+                    <!--&lt;!&ndash;android:focusable="false"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:clickable="false"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:focusableInTouchMode="false"&ndash;&gt;-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:background="#dad8d8" />-->
+
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store Details"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textColor="@color/colorText2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome Message"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorText2" />
+
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:background="#00000000"
+                        android:maxLines="2"
+                        android:inputType="text"
+                        android:maxLength="100"
+                        android:id="@+id/inputStWel"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorText2"
+                    android:id="@+id/textView4" />
+
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:background="#00000000"
+                        android:maxLines="2"
+                        android:inputType="text"
+                        android:maxLength="100"
+                        android:id="@+id/inputStAbout"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Returns and exchanges"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorText2" />
+
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:background="#00000000"
+                        android:maxLines="2"
+                        android:inputType="text"
+                        android:maxLength="100"
+                        android:id="@+id/inputStReAndEx"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Policy"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorText2" />
+
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:background="#00000000"
+                        android:maxLines="2"
+                        android:inputType="text"
+                        android:maxLength="100"
+                        android:id="@+id/inputStDPolicy"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:text="Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:id="@+id/btnCreateStDone"
+                android:background="#44BEC7"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:layout_margin="16dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+        <!--<TableRow-->
+            <!--android:layout_marginTop="8dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Shop currency"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="#58595B"-->
+                <!--android:layout_column="1"-->
+                <!--/>-->
+
+            <!--<Spinner-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/spinStCurrency"-->
+                <!--android:layout_weight="1"-->
+                <!--android:entries="@array/currency"-->
+                <!--/>-->
+
+
+        <!--</TableRow>-->
+
+
+
+
+
+        <!--<View-->
+            <!--android:layout_height="2dip"-->
+            <!--android:background="#FF909090"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"/>-->
+
+        <!--<TextView-->
+            <!--android:text="Setup Billing"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="24sp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="10dp"/>-->
+
+
+        <!--<TableRow-->
+            <!--android:layout_marginTop="8dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Card Number"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="#58595B"-->
+                <!--android:layout_column="1"-->
+                <!--/>-->
+
+            <!--<EditText android:id="@+id/inputStCardNumber"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="20sp"-->
+                <!--android:padding="8dp" />-->
+        <!--</TableRow>-->
+
+
+        <!--<TableRow-->
+            <!--android:layout_marginTop="8dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Expiration date"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="#58595B"-->
+                <!--android:layout_column="1"-->
+                <!--/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--&gt;-->
+
+                <!--<Spinner-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/spinStMonty"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:entries="@array/month"-->
+                    <!--/>-->
+
+                <!--<Spinner-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/spinStYear"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:entries="@array/year"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</TableRow>-->
+
+
+        <!--<TableRow-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginBottom="8dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Security Code"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="#58595B"-->
+                <!--android:layout_column="1"-->
+                <!--/>-->
+
+            <!--<EditText android:id="@+id/inputStSecurityCode"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="20sp"-->
+                <!--android:padding="8dp" />-->
+        <!--</TableRow>-->
+
+
+

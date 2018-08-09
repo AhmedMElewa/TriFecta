@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">Trifecta</string>
+
+    <string name="facebook_app_id"></string>
+    <string name="loading">Loading</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_inbox">Inbox</string>
+    <string name="nav_store">Store</string>
+    <string name="nav_order">Orders</string>
+    <string name="nav_mywhishlist">Favourites</string>
+    <string name="nav_settings">Profile</string>
+    <string name="nav_logout">Log out</string>
+    <string name="nav_contact">Contact Us</string>
+    <string name="nav_about">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>TRIFECTA</item>
+        <item>Inbox</item>
+        <item>Store</item>
+        <item>Orders</item>
+        <item>Favourites</item>
+        <item>Profile</item>
+
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string-array name="year">
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>Alexandria</item>
+        <item>Aswan</item>
+        <item>Asyut</item>
+        <item>Beheira</item>
+        <item>Beni Suef</item>
+        <item>Cairo</item>
+        <item>Dakahlia</item>
+        <item>Damietta</item>
+        <item>Faiyum</item>
+        <item>Gharbia</item>
+        <item>Giza</item>
+        <item>Ismailia</item>
+        <item>Kafr El Sheikh</item>
+        <item>Luxor</item>
+        <item>Matruh</item>
+        <item>Minya</item>
+        <item>Monufia</item>
+        <item>New Valley</item>
+        <item>North Sinai</item>
+        <item>Port Said</item>
+        <item>Qalyubia</item>
+        <item>Qena</item>
+        <item>Red Sea</item>
+        <item>Sharqia</item>
+        <item>Sohag</item>
+        <item>South Sinai</item>
+        <item>Suez</item>
+
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>LE</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>Arabic</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Accessories</item>
+        <item>Bags</item>
+        <item>Jewelry</item>
+        <item>Clothing &amp; Shoes</item>
+        <item>Home &amp; Living</item>
+        <item>Pet Supplies</item>
+        <item>Party Supplies</item>
+        <item>Toys</item>
+        <item>Electronic Accessories</item>
+        <item>Art &amp; Collectibles</item>
+        <item>Craft Supplies &amp; Tools</item>
+    </string-array>
+
+    <string-array name="quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="processingTime">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="payment">
+        <item>Cash</item>
+        <item>Fawry</item>
+        <item>Vodafone Cash</item>
+        <!--<item>Credit</item>-->
+
+    </string-array>
+
+    <string-array name="made">
+        <item>Me</item>
+        <item>A member of my shop</item>
+        <item>Another company or person</item>
+    </string-array>
+
+    <string-array name="When_made">
+        <item>1990-2000</item>
+        <item>2000-2005</item>
+        <item>2005-2010</item>
+        <item>2010-2017</item>
+    </string-array>
+    <string name="title_activity_my_products2">MyProducts2</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+</resources>

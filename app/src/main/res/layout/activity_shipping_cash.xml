@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <!--//main-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            >
+
+
+            <!--******FIRST NAME*******-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_texmenutop" />
+
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:id="@+id/order_create_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:background="#00000000"
+                        android:maxLines="1"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--******PHONE NO.********-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/phoneno1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PHONE NUMBER"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_texmenutop" />
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:id="@+id/order_create_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:background="#00000000"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--******ADDRESS********-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+
+                >
+
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADDRESS"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_texmenutop" />
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:id="@+id/order_create_street"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:background="#00000000"
+                        />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Location"
+                        android:background="@color/colorPrimary"
+                        android:padding="16dp"
+                        android:textColor="#fff"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/get"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--******CITY********-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/city1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CITY"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_texmenutop" />
+
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/order_create_city"
+                        android:layout_weight="1"
+                        android:entries="@array/country"
+                        />
+
+                    <!--<EditText-->
+
+                        <!--android:id="@+id/order_create_city"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#333333"-->
+                        <!--android:background="#00000000"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:inputType="number"-->
+                        <!--android:maxLength="7"-->
+                        <!--/>-->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--******NOTE********-->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE"
+                    android:textSize="12dp"
+                    android:textColor="@color/color_texmenutop" />
+
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+
+                        android:id="@+id/order_create_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:background="#00000000"
+                        android:inputType="text"
+                        android:maxLength="30"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--******CITY********-->
+            <Button
+                android:id="@+id/order_create_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONFIRM ORDER"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:layout_margin="16dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

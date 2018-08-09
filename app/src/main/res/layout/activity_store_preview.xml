@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:orientation="vertical"
+    android:background="#fff">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fff"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/profile_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/storeProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#58595B"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/storeProfilePhoto"
+                        android:layout_marginTop="50dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/City"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#58595B"
+                        android:text="Cairo"
+                        android:layout_below="@+id/storeProfileName"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/storeProfilePhoto"/>
+
+                    <TextView
+                        android:id="@+id/storeLanguage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#58595B"
+                        android:text="Language"
+                        android:layout_below="@+id/storeProfileName"
+                        android:layout_toRightOf="@+id/City"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/storeSales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#58595B"
+                        android:text="sales"
+                        android:layout_below="@+id/storeProfileName"
+                        android:layout_toRightOf="@+id/storeLanguage"
+                        android:layout_marginLeft="10dp"/>
+
+                    <RatingBar
+                        android:id="@+id/profileRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:numStars="5"
+                        android:stepSize="0.1"
+                        android:isIndicator="true"
+                        android:layout_below="@+id/City"/>
+
+                    <!--style="?android:attr/ratingBarStyleSmall"-->
+
+                    <ImageView
+                        android:id="@+id/storeProfilePhoto"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:elevation="5dp"
+                        android:padding="20dp"
+                        android:scaleType="centerCrop"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="16dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/txtWelcome"
+                    android:layout_margin="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="16dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/StorePreview_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No products  for this store"
+                    android:padding="16dp"
+                    android:textSize="13dp"
+                    android:textColor="@color/color_texmenutop"
+                    android:layout_marginBottom="50dp"
+                    android:background="#ffff"
+                    android:visibility="gone"
+                    android:id="@+id/productsCheck"
+                    />
+
+                <Button
+                    android:text="View all products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/btnViewAllProducts"
+                    android:background="#44BEC7"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="16dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Owner"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:id="@+id/userProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="user_profile_name"
+                        android:textColor="#58595B"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/userProfilePhoto"
+                        android:layout_marginTop="30dp"
+                        />
+
+
+
+
+                    <!--style="?android:attr/ratingBarStyleSmall"-->
+                    <ImageView
+                        android:id="@+id/userProfilePhoto"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:elevation="5dp"
+                        android:padding="20dp"
+                        android:scaleType="centerCrop"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+
+
+
+                <View
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="16dp"
+                    />
+
+                    <View
+
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginTop="16dp"
+
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#fff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Store Reviews"
+                        android:padding="16dp"
+                        android:textSize="13dp"
+                        android:textColor="@color/color_texmenutop"
+
+                        />
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/reivews_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        />
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No reviews for this store"
+                        android:padding="16dp"
+                        android:textSize="13dp"
+                        android:textColor="@color/color_texmenutop"
+                        android:background="#ffff"
+                        android:visibility="gone"
+                        android:id="@+id/reviewsCheck"
+                        />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="16dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+                    <!--*********discription**********-->
+
+                    <LinearLayout
+
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#fff"
+                        >
+
+                        <TextView
+                            android:id="@+id/txtAbout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Item discription"
+                            android:textColor="@color/color_texmenutop"
+                            android:drawableRight="@drawable/arrow"
+
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="16dp"
+                        />
+
+                    <!--*********Returns**********-->
+
+                    <LinearLayout
+
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/txtShipping"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery"
+                            android:textColor="@color/color_texmenutop"
+                            android:drawableRight="@drawable/arrow"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="16dp"
+                        />
+
+
+
+
+                    <!--*********Guarantee**********-->
+
+                    <LinearLayout
+
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="100dp"
+                        >
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/txtReAndRx"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Returns"
+                            android:textColor="@color/color_texmenutop"
+                            android:drawableRight="@drawable/arrow"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/btnContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Contact"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+
+
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/nav_inbox"
+            android:icon="@drawable/ic_photo_library_black_24dp"
+            android:title="@string/nav_inbox" />
+
+        <item
+            android:id="@+id/nav_store"
+            android:icon="@drawable/ic_store_black_24dp"
+            android:title="@string/nav_store" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+            android:title="@string/nav_order" />
+
+        <item
+            android:id="@+id/nav_wishlist"
+            android:icon="@drawable/ic_favorite_border_black_24dp"
+            android:title="@string/nav_mywhishlist" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_perm_identity_black_24dp"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contactus"
+            android:title="@string/nav_contact" />
+
+        <item
+        android:id="@+id/nav_about_us"
+        android:icon="@drawable/aboutus"
+        android:title="@string/nav_about" />
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/log_out"
+            android:title="@string/nav_logout" />
+
+
+    </group>
+
+
+
+</menu>
